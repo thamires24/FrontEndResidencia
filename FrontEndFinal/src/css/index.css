@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --main-color: #4fc8ea;
+    --secondary-color: #013ad1;
+    --main-text-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--main-color);
+}
+
+.title i {
+    font-size: 30px;
+}
+
+.nav-link {
+    color: var(--main-color);
+}
+
+.nav-link:hover,
+.title:hover {
+    color: var(--secondary-color);
+}
+
+.content-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/img/disney.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 800px;
+}
+
+.form {
+    width: 100%;
+    max-width: 1024px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.form .form-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    padding: 2px 0;
+    color: var(--main-text-color);
+    background-color: var(--main-color);
+}
+
+.form .form-title i {
+    font-size: 26px;
+}
+
+.form .form-title h2 {
+    font-size: 20px;
+}
+
+.form-body h3 {
+    font-weight: 700;
+    margin: 20px 15px 0 15px;
+}
+
+.form-body form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.input-content,
+.children-bad-content,
+.preferences-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.input-content input {
+    padding: 3px;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+
+.input-date-content,
+.input-select-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.input-date,
+.input-select {
+    display: flex;
+    width: 480px;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.input-date input,
+.input-select select {
+    padding: 3px;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+
+.children-bad {
+    display: flex;
+    gap: 20px;
+}
+
+.preferences-options {
+    display: flex;
+    gap: 20px;
+}
+
+.children-bad input[type="radio"],
+.children-bad label,
+.preferences-input input[type="checkbox"],
+.preferences-input label {
+    cursor: pointer;
+}
+
+.btn-submit {
+    padding: 4px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 4px;
+    transition: all 0.1s;
+}
+
+.btn-submit:hover {
+    background-color: transparent;
+    color: var(--main-color);
+}
+
+.offer-content,
+.explore-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #eaeaea;
+}
+
+.offer-box,
+.explore-box,
+.footer-content {
+    width: 100%;
+    max-width: 1024px;
+}
+
+.offer-title,
+.explore-title {
+    margin-top: 20px;
+}
+
+.offer-title h3,
+.explore-title h3 {
+    font-weight: 700;
+}
+
+.offer-boxcard,
+.explore-boxcard {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.offer-boxcard .offer-card-left {
+    width: 100%;
+    max-width: 500px;
+    height: 420px;
+}
+
+.offer-boxcard .offer-card-left img,
+.offer-card-right .offer-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.offer-card-left,
+.offer-card {
+    position: relative;
+}
+
+.offer-card-left p,
+.offer-card p {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding: 5px 10px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.offer-boxcard .offer-card-right {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    flex: 1;
+    width: 100%;
+    max-width: 500px;
+}
+
+.offer-card-right .offer-card {
+    width: 100%;
+    max-width: 245px;
+    height: 200px;
+}
+
+.explore-content {
+    padding-bottom: 20px;
+}
+
+.explore-boxcard {
+    gap: 12px;
+}
+
+.explore-card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+}
+
+.explore-card img {
+    width: 100%;
+    height: 376px;
+}
+
+.explore-card-info {
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.explore-card-info h4,
+.explore-card-info p {
+    margin: 0;
+}
+
+.explore-card-info h4{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-box-left,
+.footer-box-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-box-left p,
+.footer-box-right a {
+    margin: 0;
+}
+
+.footer-box-right a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-box-right a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .form {
+        width: 95%;
+    }
+
+    .input-date,
+    .input-select {
+        width: 100%;
+    }
+
+    .input-date-content,
+    .input-select-content {
+        gap: 10px;
+    }
+
+    .offer-box,
+    .explore-box {
+        width: 95%;
+    }
+
+    .offer-boxcard,
+    .explore-boxcard {
+        gap: 20px;
+    }
+
+    .offer-boxcard .offer-card-left {
+        width: 100%;
+        max-width: none;
+    }
+
+    .offer-boxcard .offer-card-right {
+        width: 100%;
+        max-width: none;
+    }
+
+    .offer-card-right .offer-card {
+        width: calc(33.3% - 15px);
+        max-width: none;
+    }
+
+    .offer-card-right .offer-card:nth-child(4) {
+        width: 100%;
+        margin-top: 20px;
+        max-width: none;
+    }
+
+    .explore-boxcard {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 640px) {
+    .offer-boxcard .offer-card-left {
+        height: 200px;
+    }
+
+    .offer-boxcard .offer-card-right {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .offer-card-right .offer-card {
+        width: 100%;
+        max-width: none;
+    }
+
+    .offer-card-right .offer-card:nth-child(4) {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-content {
+        justify-content: center;
+    }
+
+    .footer-box {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-box-left,
+    .footer-box-right {
+        text-align: center;
+    }
+}

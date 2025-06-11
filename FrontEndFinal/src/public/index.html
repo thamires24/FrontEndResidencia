@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia Serratec</title>
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold title" href="/">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Agência de Viagens
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-circle-info"></i>
+                                Quem Somos
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-form">
+            <div class="form">
+                <div class="form-title">
+                    <i class="fa-solid fa-plane-departure"></i>
+                    <h2>Solicite um orçamento</h2>
+                </div>
+
+                <div class="form-body">
+                    <h3>Informe seus dados</h3>
+
+                    <form id="travelForm">
+                        <div class="input-content">
+                            <label for="name">Nome</label>
+                            <input type="text" name="name" id="name" placeholder="Nome Completo" required>
+                        </div>
+                        
+                        <div class="input-content">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" placeholder="exemplo@gmail.com" required>
+                        </div>
+
+                        <div class="input-content">
+                            <label for="tel">Telefone</label>
+                            <input type="tel" name="tel" id="tel" placeholder="(XX)XXXX-XXXXX" maxlength="11" required>
+                        </div>
+
+                        <div class="input-date-content">
+                            <div class="input-date">
+                                <label for="go-date">Data da Ida</label>
+                                <input type="date" name="go-date" id="go-date">
+                            </div>
+
+                            <div class="input-date">
+                                <label for="return-date">Data da Volta</label>
+                                <input type="date" name="return-date" id="return-date">
+                            </div>
+                        </div>
+
+                        <div class="input-select-content">
+                            <div class="input-select">
+                                <label for="origin">Origem</label>
+                                <select name="origin" id="origin">
+                                    <option value="">Partindo de</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="MG">Minas Gerais</option>
+                                </select>
+                            </div>
+
+                            <div class="input-select">
+                                <label for="destination">Destino</label>
+                                <select name="destination" id="destination">
+                                    <option value="">Indo para</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="MG">Minas Gerais</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="children-bad-content">
+                            <label>Quarto com cama infantil?</label>
+                            <div class="children-bad">
+                                <div>
+                                    <input type="radio" name="bad" id="bad" value="true">
+                                    <label for="bad">Sim</label>
+                                </div>
+                                
+                                <div>
+                                    <input type="radio" name="no-bad" id="no-bad" value="false">
+                                    <label for="no-bad">Não</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="preferences-content">
+                            <label>Preferências da hospedagem</label>
+                            <div class="preferences-options">
+                                <div class="preferences-input">
+                                    <input type="checkbox" name="pool" id="pool" value="pool">
+                                    <label for="pool">Piscina</label>
+                                </div>
+
+                                <div class="preferences-input">
+                                    <input type="checkbox" name="wifi" id="wifi" value="wifi">
+                                    <label for="wifi">Wi-Fi</label>
+                                </div>
+
+                                <div class="preferences-input">
+                                    <input type="checkbox" name="garage" id="garage" value="garage">
+                                    <label for="garage">Garagem</label>
+                                </div>
+
+                                <div class="preferences-input">
+                                    <input type="checkbox" name="suite" id="suite" value="suite">
+                                    <label for="suite">Suíte</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Solicitar orçamento</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="offer-content">
+            <div class="offer-box">
+                <div class="offer-title">
+                    <h3>Ofertas</h3>
+                    <p>Com até <strong>50%</strong> de desconto</p>
+                </div>
+                
+                <div class="offer-boxcard">
+                    <div class="offer-card-left">
+                        <img src="/img/riodejaneiro.png" alt="Rio de Janeiro">
+                        <p>Rio de Janeiro</p>
+                    </div>
+
+                    <div class="offer-card-right">
+                        <div class="offer-card">
+                            <img src="/img/manaus.png" alt="Manaus">
+                            <p>Manaus</p>
+                        </div>
+
+                        <div class="offer-card">
+                            <img src="/img/niteroi.png" alt="Niteroi">
+                            <p>Niteroi</p>
+                        </div>
+
+                        <div class="offer-card">
+                            <img src="/img/saopaulo.png" alt="São Paulo">
+                            <p>São Paulo</p>
+                        </div>
+
+                        <div class="offer-card">
+                            <img src="/img/maranhao.png" alt="Maranhão">
+                            <p>Maranhão</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="explore-content">
+            <div class="explore-box">
+                <div class="explore-title">
+                    <h3>Explore a natureza</h3>
+                    <p>Viaje conosco e veja o melhor que a natureza tem a oferecer</p>
+                </div>
+
+                <div class="explore-boxcard">
+                    <div class="explore-card">
+                        <img src="/img/lencois-maranhenses.png" alt="Lençois Maranhenses">
+
+                        <div class="explore-card-info">
+                            <h4>Lençois Maranhenses, Brasil</h4>
+                            <p>Ida e volta a partir de <strong>R$79</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="explore-card">
+                        <img src="/img/santa-barbara.png" alt="Cachoeira Santa Bárbara">
+
+                        <div class="explore-card-info">
+                            <h4>Cachoeira Santa Bárbara, Brasil</h4>
+                            <p>Ida e volta a partir de <strong>R$139</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-box">
+                <div class="footer-box-left">
+                    <h3>Contato</h3>
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Rio de Janeiro, RJ
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-phone"></i>
+                        Telefone (XX)XXXX-XXXXX
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-at"></i>
+                        E-mail agencia@serratec.org
+                    </p>
+                </div>
+
+                <div class="footer-box-right">
+                    <h3>Nossas Redes Sociais</h3>
+                    <a href="https://facebook.com">
+                        <i class="fa-brands fa-square-facebook"></i>
+                        /AgenciaSerratec
+                    </a>
+
+                    <a href="https://instagram.com">
+                        <i class="fa-brands fa-square-instagram"></i>
+                        @AgenciaSerratec
+                    </a>
+
+                    <a href="https://x.com">
+                        <i class="fa-brands fa-square-x-twitter"></i>
+                        @AgenciaSerratec
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/form-handler.js"></script>
+</body>
+</html>

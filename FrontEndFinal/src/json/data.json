@@ -1,0 +1,111 @@
+{
+  "lastId": 7,
+  "travels": [
+    {
+      "id": 1,
+      "name": "Elton Giglio Kasesky",
+      "email": "eltonkasesky@email.com",
+      "tel": "(11)91234-9999",
+      "goDate": "2025-06-05",
+      "returnDate": "2025-06-15",
+      "origin": "RJ",
+      "destination": "SP",
+      "childBed": true,
+      "preferences": [
+        "wifi",
+        "suite"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Maria Oliveira",
+      "email": "maria.oliveira@example.com",
+      "tel": "(11)98765-4321",
+      "goDate": "2025-07-10",
+      "returnDate": "2025-07-20",
+      "origin": "SP",
+      "destination": "MG",
+      "bad": false,
+      "preferences": [
+        "garage",
+        "suite"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Carlos Souza",
+      "email": "carlos.souza@example.com",
+      "tel": "(31)99876-5432",
+      "goDate": "2025-08-01",
+      "returnDate": "2025-08-10",
+      "origin": "MG",
+      "destination": "SC",
+      "bad": true,
+      "preferences": [
+        "pool"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Ana Martins",
+      "email": "ana.martins@example.com",
+      "tel": "(48)91234-9876",
+      "goDate": "2025-09-05",
+      "returnDate": "2025-09-15",
+      "origin": "SC",
+      "destination": "RJ",
+      "bad": false,
+      "preferences": [
+        "wifi",
+        "suite"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Pedro Lima",
+      "email": "pedro.lima@example.com",
+      "tel": "(21)90000-1234",
+      "goDate": "2025-10-12",
+      "returnDate": "2025-10-22",
+      "origin": "RJ",
+      "destination": "SC",
+      "bad": true,
+      "preferences": [
+        "pool",
+        "wifi",
+        "garage",
+        "suite"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Tamires Esteves",
+      "email": "tamires@email.com",
+      "tel": "(24)91234-1234",
+      "goDate": "2025-06-20",
+      "returnDate": "2025-06-30",
+      "origin": "RJ",
+      "destination": "SP",
+      "childBed": true,
+      "preferences": [
+        "wifi",
+        "pool",
+        "suite"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Jhonatan Martins",
+      "email": "jhonatan@gmail.com",
+      "tel": "24999801234",
+      "origin": "RJ",
+      "destination": "SP",
+      "childBed": false,
+      "preferences": [
+        "pool",
+        "wifi",
+        "suite"
+      ]
+    }
+  ]
+}
