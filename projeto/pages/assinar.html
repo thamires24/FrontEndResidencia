@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assinatura de Plano</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/componentes.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="layout-assinatura">
+        <h1 class="titulo-formulario">Assinatura de Plano de Internet</h1>
+
+        <form method="post" class="form">
+          <div class="row">
+            <div class="my-3 col-md-12">
+              <label for="nome">Nome:</label>
+              <input
+                type="text"
+                name="nome"
+                id="nome"
+                placeholder="Digite o nome:"
+                class="form-control"
+                required="true"
+                maxlength="60"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="my-3 col-md-12">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Digite o email:"
+                class="form-control"
+                required="true"
+                maxlength="50"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="my-3 col-md-3">
+              <label for="telefone">Telefone:</label>
+              <input
+                type="tel"
+                name="telefone"
+                id="telefone"
+                placeholder="Digite seu telefone:"
+                class="form-control"
+              />
+            </div>
+
+            <div class="my-3 col-md-3">
+              <label for="dataNasc">Data de Nasc.:</label>
+              <input
+                type="date"
+                name="dataNasc"
+                id="dataNasc"
+                class="form-control"
+              />
+            </div>
+
+            <div class="my-3 col-md-3">
+              <label for="tipoPlano">Escolha o seu plano:</label>
+              <select name="tipoPlano" id="tipoPlano">
+                <option value="B">Básico</option>
+                <option value="I">Intermediário</option>
+                <option value="A">Avançado</option>
+              </select>
+            </div>
+
+            <div class="my-3 col-md-3">
+              <label>Serviço Adicional:</label>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="netflix"
+                  name="tipoServico"
+                  value="netflix"
+                />
+                <label class="form-check-label" for="tipoServico"
+                  >Netflix</label
+                >
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="prime"
+                  name="tipoServico"
+                  value="prime"
+                />
+                <label class="form-check-label" for="tipoServico">Prime</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="disney"
+                  name="tipoServico"
+                  value="disney"
+                />
+                <label class="form-check-label" for="tipoServico">Disney</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="my-3 col-md-6">
+              <label for="avaliacao">Avalição de atendimento ao cliente</label>
+              <input type="range" list="avaliacao" />
+              <datalist id="avaliacao">
+                <option value="0" label="0%">0%</option>
+                <option value="20" label="20%">20%</option>
+                <option value="40" label="40%">40%</option>
+                <option value="60" label="60%">60%</option>
+                <option value="80" label="80%">80%</option>
+                <option value="100" label="100%">100%</option>
+              </datalist>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button type="reset" class="btn btn-secondary">Limpar</button>
+        </form>
+      </div>
+    </div>
+    <script src="../js/form.js"></script>
+  </body>
+</html>

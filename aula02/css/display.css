@@ -1,0 +1,36 @@
+body{
+    font-size: 20px; ;
+}
+.empresa{
+    background-color: red;
+}
+
+.area{
+    background-color: rgb(83, 83, 155);
+}
+
+.linguagem{
+    background-color: rgb(226, 90, 27);
+    display: inline-block;
+    height: 100px;
+    width: 500px;
+}
+
+.computador{
+    background-color: yellow;
+    color: crimson;
+    display: inline-block;
+    height: 100px;
+    width: 500px;
+}
+
+.desktop{
+    background-color: rgb(0, 255, 0);
+   
+}
+
+.teste{
+    width: 500px;
+    height: 80px;
+    border: 10px solid black;
+}

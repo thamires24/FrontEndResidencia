@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Aula de JS</h1>
+    <p>Exemplos</p>
+    <script>
+        // Função JS meslcado com HTML
+        function msg(){
+            document.write("Aula de Função<br>");
+        }
+        msg();
+        msg();
+
+        function media(a, b){
+
+            document.write("Média: " + (a + b) / 2 + "<br>");
+        }
+        //Função anônima pois não tem nome, cria uma varaiável que recebe a função
+        const media2 = function(a, b=2){
+            //é possível passear um valor padrão para o parâmetro b, caso não seja passado nenhum valor
+           // document.write(b) 
+           // //não é um número, por isso não é possível calculcar
+            return (a + b) / 2;
+        }
+
+        //Arrow Function
+        //programação funcional 
+        //sintaxe reduzida, não precisa do return e nem do bloco de código
+        const media3 = (a, b) => (a + b) / 2;
+    
+
+        document.write(media3(15, 25));
+
+        //Função Arrow que retorne seu nome
+        const nome = () => {
+       return document.write(prompt("Digite seu nome: "));
+        }
+        nome();
+
+    </script>
+    
+
+</body>
+</html>

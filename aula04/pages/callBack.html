@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //JS permite que você crie funções que podem ser passadas como argumento para outras funções, isso é chamado de callback.
+        //função
+        const saudacao = (nome) => alert(`Olá ${nome}`);
+
+        //callback
+        const procesamento = (callback) => {
+            const nome = prompt("Qual o seu nome: ");
+            callback(nome);
+        };
+
+        //chamada da função
+        procesamento(saudacao);
+    </script>
+</body>
+</html>

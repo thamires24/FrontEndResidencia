@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classe</title>
+
+    <style>
+       .disciplinas{
+        font-family: 'Courier New';
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+       }
+
+       .disciplinas li{
+        background-color: bisque;
+        color: darkorange;
+        border: 2px solid black;
+       }
+
+       .disciplina li:first-child{
+        color: darkblue;
+        border: none;
+       }
+
+       .disciplina li:last-child{
+        color: darkgreen;
+        border: none
+       }
+       /* even são pares/ odd, são impares */
+       .disciplina li:nth-child(even){
+        color: darkred;
+       }
+
+        </style>
+</head>
+<body>
+    <ul class="disciplina">
+        <li>Lógica</li>
+        <li>Banco de Dados</li>
+        <li>P.O.O</li>
+        <li>Front-End</li>
+        <li>API</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="mensagem">Texto Qualquer</p>
+
+    <p id="texto">Teste de Query Selector</p>
+
+    <script>
+        document.querySelector(".mensagem").textContent = "Textto Atualizado";
+        document.querySelector("#texto").textContent = "Atualizado";
+        document.querySelector(".mensagem").style.backgroundColor = "darkblue";
+    </script>
+        
+    
+</body>
+</html>

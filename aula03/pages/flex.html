@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+
+        body{
+            background-color: gray;
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            height: 100vh; 
+
+        }
+        .container {
+            /* tudo deve ser feito nessa classe pai e será aplicado nos filhos */
+            border: 3px solid black;
+            width: 640px;
+            height: 400px;
+            display: flex;
+            flex-direction: row; 
+            /*Alinha os elementos na horizontal, default, caso queira em coluna é preciso especificar com COLUMN
+            flex-direction: column;*/
+            justify-content: space-evenly; /* Alinha os elementos pela especificação */
+            align-items: center; /* Alinha os elementos verticalmente */
+            gap: 20px;
+            /*serve para dar espaçamento entre os elementos */
+            flex-wrap: wrap;
+            /* Faz com que os elementos que não couberem na tela sejam jogados para a linha de baixo */
+            align-content: flex-start; 
+            /* align-content alinha os filhos */
+        }
+        .elementos {
+            border: 2px solid red;
+            width: 120px;
+            height: 120px;
+            display: flex; /* Para que os filhos sejam flexíveis */
+            justify-content: center; 
+            align-items: center;
+            text-align: center; 
+        }
+        .miolo {
+            border: 1px solid blue;
+            width: 50%;
+            height: 40%;
+            /* o percentual é sempre em relação ao pai */
+            
+        }
+    </style>
+        
+</head>
+<body>
+    <div class="container">
+        <div class="elementos">
+            <div class="miolo">
+                <p>Texto 1</p>
+            </div>
+        </div>
+        <div class="elementos">
+            <div class="miolo">
+                <p>Texto 2</p>
+            </div>
+        </div>
+        <div class="elementos">
+            <div class="miolo">
+                <p>Texto 3</p>
+            </div>
+        </div>
+        <div class="elementos">
+            <div class="miolo">
+                <p>Texto 4</p>
+            </div>
+        </div>
+        <div class="elementos">
+            <div class="miolo">
+                <p>Texto 5</p>
+            </div>
+        </div>
+        <div class="elementos">
+            <div class="miolo">
+                <p>Texto 6</p>
+            </div>
+        </div>
+        <div class="elementos">
+            <div class="miolo">
+                <p>Texto 7</p>
+            </div>
+        </div>
+        <div class="elementos">
+            <div class="miolo">
+                <p>Texto 8</p>
+            </div>
+        </div>
+    </div>
+        
+</body>
+</html>

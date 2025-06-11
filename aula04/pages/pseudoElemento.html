@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elemento</title>
+
+    <style>
+        h1::first-letter{
+            font-size: 96px;
+    
+        }
+
+        h2::after{
+            content: " de Pseudo Elemento";
+        }
+        /* inseri um texto no final do h2 */
+        h2::before{
+            content: "Aula de CSS";
+            /* text-shadow sombreado */
+            text-shadow: 2px 2px 5px blue;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Exemplo de uso de Pseudo Elemento</h1>
+    <h2> Teste de uso</h2>
+    
+</body>
+</html>

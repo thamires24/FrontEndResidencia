@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* percentual é relativo ao pai direto, senão pega o padrão do navegador */
+        html{
+            font-size: 50%;
+        }
+        h1{
+            font-size: 500%;
+        }
+        .caixa{
+            font-size: 200%;
+            border: 1px solid black;
+            /*viewport dinamico 
+            faz com que o texto distribuido pela tela */
+            width: 50%;
+            padding: 10%;
+            margin: 10%;
+        }
+        p{
+            font-size: 300%;
+        }
+    </style>
+</head>
+<body>
+    <div class="caixa">
+        <h1>Teste de Fonte</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut rerum eum quisquam architecto ea totam est, qui reprehenderit eligendi eius assumenda quo hic rem repellat voluptate iusto! Error, sed consequatur!
+
+        </p>
+    </div>
+</body>
+</html>

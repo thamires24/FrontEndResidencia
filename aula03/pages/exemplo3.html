@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Java</p>
+    <p>PHP</p>
+    <p>Python</p>
+    <p>FoxPro</p>
+    
+    <!-- outra maneira de manipular os elementos pelo JS -->
+    <script>
+        var tags = document.getElementsByTagName("p");
+        for (var i = 0; i < tags.length; i++) {
+            tags[i].style.color = "blue";
+            tags[i].style.fontWeight = "bold";
+
+        }
+    </script>
+    
+</body>
+</html>

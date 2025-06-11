@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Consumindo dados da API do github</h1>
+        <button onclick="dadosGitHub()">Consultar</button>
+        <hr>
+        <h2>Resposta de requsisição</h2>
+        <div class="resposta">
+            <p>Dados do GitHub</p>
+        </div>
+    </div>
+
+    <script>
+        function dadosGitHub() {
+            const url ="https://api.github.com/users/thamires24";
+
+            
+            fetch(url)
+            .then((resolve)=> resolve.json())
+            .then((data)=>mostrarDados(data))
+            .catch((reject)=>console.log("Erro"+reject));
+        }
+
+        function mostrarDados(dados) {
+           let resposta = document.querySelecto (".resposta");
+           resposta.innerHTML = `<p> ${dados.login}</p>
+           <img src=${dados.avatar_url}></img>`;
+        }
+    </script>
+</body>
+</html>

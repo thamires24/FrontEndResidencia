@@ -1,0 +1,27 @@
+body{
+    font-size: 24px;
+    font-family: Arial;
+}
+
+.texto1, .texto2, .texto3{
+    text-align: justify;
+    width: 600px;
+    background-color: rgb(160, 181, 212);    
+}
+
+.texto1{
+    border: 15px solid rgb(0, 0, 0);
+    padding: 20px;;
+}
+
+.texto2{
+    border: 15px solid rgb(9, 0, 128);
+    padding: 20px;
+    box-sizing: border-box; 
+    /* bordex-box matem a proporçao da caixa*/
+}
+.texto3{
+    background-color: rgb(219, 42, 125);
+    height: 10;
+  
+}

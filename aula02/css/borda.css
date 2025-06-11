@@ -1,0 +1,18 @@
+body{
+    font-family: Arial;
+    font-size: 24px;
+    margin: 0;
+
+}
+
+.texto1, .texto2{
+    text-align: justify;
+    width: 600px;
+    border: 6px solid gray;
+    background-color: rgba(134, 55, 130, 0.411);
+    /*espçamento entre as bordas e o texto*/
+    padding: 20px 60px;
+}
+p{
+    margin: 0;
+}

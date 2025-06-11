@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <p id="texto">Aula Java Script</p>
+
+    <div id="caixa"></div>
+
+     <!-- O script deve vir no final do body para ser executado e passar todas as formatações para o texto -->
+    <script>
+        // getElementById busca o elemento pelo id
+        document.getElementById("texto").style.color = "yellow";
+        document.getElementById("texto").style.fontSize = "50px";
+
+        var texto = document.getElementById("texto");
+        texto.style.color = "black";
+        texto.style.fontSize = "72px";
+
+        var caixa = document.getElementById("caixa");
+        caixa.style.border = "1px solid darkblue";
+        caixa.style.width = "300px";
+        caixa.style.height = "300px";
+        caixa.style.backgroundColor = "#aaa";
+    </script>
+    
+</body>
+</html>

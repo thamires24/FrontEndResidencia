@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidas Relativas</title>
+    <style>
+        /* EM é unidade de medida relativa ao pai direto, caso não seja determinado, ele pega o padrão do navegador */
+        /* rem é relativo ao navegador
+        O ideal é que se coloque no primeiro elemento para que se tenha uma padrão */
+        /* 32px */
+        .texto{
+            font-size: 2em;
+        }
+        /* 48px */
+        .texto p{
+            font-size: 1.5em;
+        }
+
+        /* 72px */
+        .frase span{
+            font-size: 1.5em;
+        }
+        /* 14/16 */
+        .exemplo{
+            font-size: 0.875em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Unidades de Medida</h1>
+    <div class="texto">
+        <p>Aula CSS</p>
+        <p class="frase">
+            Lorem <sapn>ipsum dolor </sapn> sit amet consectetur adipisicing elit. Nostrum placeat possimus illo iusto, facilis eaque repudiandae excepturi sint aliquid assumenda ab cumque doloremque, nobis vitae optio earum animi nesciunt eius.
+        </p>
+    </div>
+    <div class="exemplo">
+        <p>Teste</p>
+    </div>
+</body>
+</html>
