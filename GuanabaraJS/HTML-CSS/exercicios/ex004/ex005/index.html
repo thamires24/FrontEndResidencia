@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links Internos e Externos</title>
+</head>
+<body>
+    <h1>Usando Links Externos</h1>
+    <p>Você pode acessar meu <a href="https://github.com/thamires24/aula-github" target="_blank" rel="external">repositório público do GitHuub</a></p>
+    <!-- o 'rel="external"' serve para que, quando for para um link externo, abrir em outra aba, ao invés de abrir por cima da minha página. Assim ficam duas abas abertas. -->
+
+    <h2>Usando Links Internos</h2>
+    <p>Esta é a primeira página do site. Se você precisar, pode acessar também a minha <a href="pag002.html" rel="next">segunda página</a></p>
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias</a></p>
+    <!-- target="self" usado para que abram as páginas no mesmo aba. -->
+     <!-- no caso de links internos só precisamos usar o caminho da pasta de onde está o index -->
+
+     <h1>Links para Download</h1>
+    <ul>
+        <li><a href="livro/O que você quiser - Castway PARTE 7 Sara Fawkes.pdf" download="O que você quiser - Castway PARTE 7 Sara Fawkes.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        <!-- midia type para cada extensão "iana.org" -->
+        <li><a href="#" download="#" type="application/zip">Livro compactado em ZIP</a></li>
+    </ul>
+
+</body>
+</html>
